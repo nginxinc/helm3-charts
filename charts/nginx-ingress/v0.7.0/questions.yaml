@@ -57,7 +57,7 @@ questions:
     label: NGINX Ingress Controller Image Pull Policy
   - variable: controller.serviceAccount.imagePullSecretName
     default: ""
-    description: "The name of the secret containing docker registry credentials."
+    description: "The name of the secret containing docker registry credentials. Secret must exist in the same namespace as the helm release."
     type: string
     label: Image Pull Secret Name
 - variable: controller.defaultTLS.secret
